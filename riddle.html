@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Jovan Cruz 
+		111.41 
+		Riddle Assignment
+		-->
+		<title>Riddles Page</title>
+		<meta charset="UTF-8">
+	</head>
+	<body style="background-color:#00bc1f">
+
+            <a href="about"> Link to About page</a>
+            <br>
+            <a href="contact"> Link to Contacts page</a>
+            <br>
+            <a href="/"> Link to Home page</a>
+
+		<h1 style="color:#000000; font-family:Impact;">My Riddles</h1>
+		
+		<h2 style="color:#000000; font-family:Arial Black;">Riddle 1: What is greater than God,
+			more evil than the devil,
+			the poor have it,
+			the rich need it,
+			and if you eat it, you'll die?</h2>
+		<span id="answer1"></span>
+		<button onclick="showAnswer('answer1', 'Nothing!.',0)">Get Answer</button>
+		
+		<h2 style="color:#000000; font-family:Arial Black;">Riddle 2: What can travel around the world while staying in a corner?</h2>
+		<span id="answer2"></span>
+		<button onclick="showAnswer('answer2', 'A Stamp!.',1)">Get Answer</button>
+		
+		<h2 style="color:#000000; font-family:Arial Black;">Riddle 3: Which word in the dictionary is spelled incorrectly?</h2>
+		<span id="answer3"></span>
+		<button onclick="showAnswer('answer3', 'Incorrectly!.',2)">Get Answer</button>
+		
+		<h2 style="color:#000000; font-family:Arial Black;">Riddle 4: If you have me, you want to share me. If you share me, you haven't got me. What am I?</h2>
+		<span id="answer4"></span>
+		<button onclick="showAnswer('answer4', 'Secret!.',3)">Get Answer</button>
+		
+		<h2 style="color:#000000; font-family:Arial Black;">Riddle 5: He has married many women, but has never been married. Who is he?</h2>
+		<span id="answer5"></span>
+		<button onclick="showAnswer('answer5', 'A Priest!.',4)">Get Answer</button>
+		
+		<h2 style="color:#000000; font-family:Arial Black;">Riddle 6: What can you catch but not throw?</h2>
+		<span id="answer6"></span>
+		<button onclick="showAnswer('answer6', 'A Cold!.',5)">Get Answer</button>
+		
+		<h2 style="color:#000000; font-family:Arial Black;">Riddle 7: What is as light as a feather, but even the world's strongest man couldn't hold it for more than a minute?</h2>
+		<span id="answer7"></span>
+		<button onclick="showAnswer('answer7', 'His Breath!.',6)">Get Answer</button>
+		
+		<h2 style="color:#000000; font-family:Arial Black;">Riddle 8: Which weighs more, a pound of feathers or a pound of bricks?</h2>
+		<span id="answer8"></span>
+		<button onclick="showAnswer('answer8', 'Neither, they both weigh one pound!.',7)">Get Answer</button>
+		
+		<h2 style="color:#000000; font-family:Arial Black;">Riddle 9: The eight of us go forth not back to protect our king from a foes attack.</h2>
+		<span id="answer9"></span>
+		<button onclick="showAnswer('answer9', 'Chess pawns!.',8)">Get Answer</button>
+		
+		<h2 style="color:#000000; font-family:Arial Black;">Riddle 10: What room can no one enter?</h2>
+		<span id="answer10"></span>
+		<button onclick="showAnswer('answer10', 'A Mushroom!.',9)">Get Answer</button>
+		
+        <h1><a href="http://brainden.com/logic-riddles.htm" target="Blank" style="color:#0cff00;"><strong>More Riddles!!!</strong></a></h1>
+        
+		<script>
+		
+			var answerShown = [];
+			function showAnswer(id,answer,num){
+				if(!answerShown[num]){
+					//Shows the answer in span tag
+					document.getElementById(id).innerHTML = answer;
+					document.getElementById(id).style.color = "#0cff00";
+					document.getElementById(id).style.fontFamily = "Comic Sans MS"
+					answerShown[num] = true;
+				}
+				else{
+					document.getElementById(id).innerHTML = "";
+					answerShown[num] = false;
+				}
+			}
+			
+		</script>
+	
+	</body>
+
+</html> 
