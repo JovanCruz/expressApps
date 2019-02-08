@@ -18,7 +18,7 @@ router.get('/about', function(req,res)
 //route for contact page
 router.get('/contact', function(req,res)
 {
-    res.sendFile(path.join(__dirname + '/contacts.html'));
+    res.sendFile(path.join(__dirname + '/contact.html'));
 });
 
 //route for riddles page
